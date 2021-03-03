@@ -1,0 +1,143 @@
+{% extends "form/base.html" %}
+
+{% load crispy_forms_tags %}
+{% load i18n %}
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!-- Title -->
+    {% block head%}
+      <title>{% trans "Log In" %}</title>
+    {% endblock %}
+    {% block body %}
+<style>
+  .sfrm{
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    margin-top: 85px;
+    background-color:#5ACCD4;
+  }
+  .srfm.btn {
+       font-size: 18px;
+   line-height: 26px;
+       font-weight: bold;
+   text-align: center;
+   }
+  .button1 {
+  display: inline-block;
+  border-radius: 25px;
+  background-color: #58A2A2;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 150px;
+  transition: all 0.5s;ss
+  cursor: pointer;
+  margin: 5px;
+  line-height:12px;
+
+}
+.button1:hover {
+  opacity: 0.6;
+  color:tomato;
+  background-color:#9B5AD4;
+}
+.or-seperator {
+    margin: 30px 0 15px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+}
+.or-seperator b {
+padding: 0 10px;
+width: 35px;
+height: 35px;
+font-size: 15px;
+text-align: center;
+line-height: 30px;
+background: #fff;
+display: inline-block;
+border: 1px solid #e0e0e0;
+border-radius: 50%;
+position: relative;
+top: -22px;
+z-index: 1;5
+}
+.circle-icon1 
+{
+    background-color:#3C599F;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+    vertical-align: middle;
+    padding: 13px;
+}
+.circle-icon2
+{
+    background-color:#CF3D2E;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+    vertical-align: middle;
+    padding: 13px;
+}
+.circle-icon2:hover
+{
+  background-color:#CF3D2E;
+}
+ .circle-icon1:hover,.circle-icon2:hover { 
+	-webkit-transform: scale(1.1) rotate(360deg);
+	-moz-transform: scale(1.1) rotate(360deg);
+	-ms-transform: scale(1.1) rotate(360deg);
+	-o-transform: scale(1.1) rotate(360deg);
+	transform: scale(1.1) rotate(360deg);
+}
+  </style>
+
+
+<div class="container-fluid" id="contact-area">
+<div class="row">
+<div class="col-sm-4  col-sm-offset-4 text-center sfrm">
+<h1>{% trans "Log in" %}</h1>
+    <form method="POST" action="{% url 'form:login' %}">
+
+
+
+        <div class="row">
+          <div class="or-seperator"><b>{% trans "or" %}</b></div>
+        </div>
+       <!-- <div class="row">
+            <div class="col-md-12">
+                {% include "socialaccount/snippets/login_extra.html" %}
+                {% csrf_token %}
+                {{ form | crispy }}
+                {% if redirect_field_value %}
+                    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+                {% endif %}
+                <a class="button secondaryAction"
+                   href="{% url 'password_reset' %}">{% trans "Forgot Password?" %}</a>
+                <button class="primaryAction button1" type="submit">{% trans "Sign In" %}</button>
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+                <p>If you do not have an account yet, please
+                    <a href="{{ signup_url }}">Sign up</a></p>
+            </div>
+        </div>
+    </form>
+    </div>
+    </div>
+
+
+</div>
+
+{% endblock %}

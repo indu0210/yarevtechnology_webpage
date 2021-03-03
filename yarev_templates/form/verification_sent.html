@@ -1,0 +1,21 @@
+{% extends "form/base.html" %}
+
+{% load i18n %}
+
+<!-- Title -->
+    {% block head%}
+      <title>{% trans "Verify Your E-mail Address" %}</title>
+    {% endblock %}
+{% block body %}
+
+
+<body >
+      <section class="section-padding text-center" id="contact-area" style="margin-top:0px; margin-bottom:0px; height:100%;">
+
+
+    <h1>{% trans "Verify Your E-mail Address" %}</h1>
+
+    <p>{% blocktrans %}We have sent an e-mail to you for verification. Follow the link provided to finalize the signup process. Please contact us if you do not receive it within a few minutes.{% endblocktrans %}</p>
+    </section>
+</body>
+{% endblock %}

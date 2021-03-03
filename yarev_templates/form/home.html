@@ -1,0 +1,532 @@
+{% extends 'base.html' %}
+<html class="no-js" lang="zxx">
+
+
+    <!-- Mainmenu-Area-/ -->
+
+<body>
+    {% block body%}
+
+
+
+  <style>
+
+  #lab_social_icon_footer a {
+  color: #333;
+}
+
+#lab_social_icon_footer .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+#lab_social_icon_footer .social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+/*
+    Multicoloured Hover Variations
+*/
+
+#lab_social_icon_footer #social-fb:hover {
+  color: #3B5998;
+}
+
+#lab_social_icon_footer #social-tw:hover {
+  color: #4099FF;
+}
+
+#lab_social_icon_footer #social-gp:hover {
+  color: #d34836;
+}
+
+#lab_social_icon_footer #social-em:hover {
+  color: #f39c12;
+}
+    .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            border-radius:20px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            cursor: pointer;
+          }
+           .btn1 {
+             background-color: #4CAF50;
+            color: white;
+            border: 2px solid #4CAF50;
+
+          }
+
+          .btn1:hover {
+            background-color: white;
+            color: black;
+          }
+          
+#onlyfr{
+  background-color:#212F3D;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+  </style>
+
+
+ 
+     <!--Header-Area-->
+
+   <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <header class="header-area overlay" id="home-area">
+        <div class="vcenter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-5">
+                        <div class="header-text">
+                              <h3 style="margin-top:120px;" class="wow fadeInUp " data-wow-delay="0.5s" data-wow-duration="2s">Welcome to </h3>
+                            <h2 class="header-title wow slideInLeft"style="color: black;"> Yarev Technology </h2>
+                            <div class="wow slideInRight" data-wow-delay="0.5s"style="color:red;"><q>Making Life Easy...</q></div>
+                            <!-- <div class="wow fadeInUp" data-wow-delay="0.7s">
+                                <a href="#" class="bttn bttn-lg bttn-primary">Contact Now</a>
+                            </div> -->
+                        </div>
+                    </div>
+                     <div class="hidden-xs-12 col-sm-6 wow bounceInUp " data-wow-delay="0.5s" data-wow-duration="2s">
+                     {% load static %}
+                    <img src="{% static 'form/images/combine.png' %} " alt="">
+                </div>
+                     </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Header-Area-/-->
+
+
+    <!-- About-Area -->
+     <section class="section-padding" id="about-area" style="background-color:#83EBF1 ;">
+        <div class="container">
+            <div class="row">
+
+                <div class="hidden-xs-12 col-sm-6 wow bounceInUp">
+                    <img src="{% static 'form/images/about us.png' %} ">
+                </div>
+
+                 <div class="col-xs-12 col-sm-6 col-md-5">
+                    <div class="page-title">
+                        <h2 class="title wow bounceInUp">About Us</h2>
+                        <div class="wow fadeInUp" data-wow-delay="0.5s">
+                            <p class="wow fadeInUp"> Yarev Technology Pvt. Ltd is start up incubated under Foundation for Technology & Business Incubation(FTBI), NIt Rourkela which is focusing on manufacturing disruptive solution in the field of home automation, water quality monitoring and water conservation etc.</p>
+                            <p class="wow fadeInUp"style ="margin-top: 2.5px;">The company has been formed with an objective of making people's life easier by providing them efficeint solution for the day to day problems like water tank filling  and also and also aims at preventing them from the health issues due to bad quality of water by providing them the monitoring of the quality of water in the tank and solutions for it.</p>
+                            <p class="wow fadeInUp" style ="margin-top: 2.5px;">We are persently building automatic building switches with IOT applications and water quality monitoring to provide home automation based solutions for households and industries at best prices.</p>
+                            <p class="wow fadeInUp"style ="margin-top: 2.5px;">The first and the leadership product of the company-YOPO is one such product.Small in size and affordable by everyone,it will solve the number of problems faced by the people and the enironment like wastage of water and electricity to wastage of time and physical effort.</p>
+                            <p class="wow fadeInUp"style ="margin-top: 2.5px;">The company aims to provide the products that seeks to solve the everyday problems of the majority of the population at best prices and make their life easy.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About-Area / -->
+    <!-- Philosophy Area -->
+
+     <section class="section-padding" id="philosophy-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-5">
+                    <div class="page-title">
+                        <h2 class="title wow slideInRight" data-wow-offset="10" >Philosophy</h2>
+                        <div class="wow fadeInUp" data-wow-delay="0.5s">
+                            <p><strong>FOCUS ON CUSTOMER SERVICE</strong></p>
+                             <p style ="margin-top: 2.5px;">We go the extraa mile to ensure our customer satisfaction and success.We are easy to insatll, easy to use and eay to do business with.</p>
+                              <p><strong>STRONG TECHNICAL EXPERTISE</strong></p>
+                               <p style ="margin-top: 2.5px;">A technology based lifestyle company for residential and commercial properties that believes in continuous innovation and invests in strong technical research and development.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="hidden-xs-12 col-sm-6 wow slideInLeft">
+                    <img src="{% static 'form/images/philosophy_img.png' %} ">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product-Area -->
+
+ <section class = "section-padding" id = "product-area" style="background-color:#83AAC1 ;">
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <a href = "/form/productdet">
+      <img src="{%static 'form/images/IMG_6434.jpg'%}" style="width:100%">
+      </a>  
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <a href = "/form/productdet">
+      <img src="{%static 'form/images/IMG_6432.jpg'%}" style="width:100%">
+      </a>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <a href = "/form/productdet">
+      <img src="{%static 'form/images/IMG_6433.jpg'%}" style="width:100%">
+      </a>
+    </div>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+
+<!--
+<div class="container-fluid text-center" id="product-area" style="background-color:#83EBF1 ">
+{% if featured_image %}
+			<div class="jumbotron" style="background-color:#83EBF1 "  >
+				<div class="container">
+					<div class="row">
+            <div class='col-sm-6 wow bounceInUp' >
+              <img src="{{featured_image.image.url}}" class="img-responsive">
+            </div>
+						<div class='col-sm-6'>
+							<h1>{{featured_image.product.title}}</h1>
+							<p>{{featured_image.product.description}}</p>
+							<p>
+								<a class="button btn1" href="{{featured_image.product.get_absolute_url}}" role="button" >More Details</a>
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		{% endif %}
+  </div> -->
+  </section>
+    <!-- Product-Area / -->
+
+
+    <!-- Team-Area -->
+    <section class="section-padding" id="team-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                    <div class="text-center">
+                        <h2 class="title wow bounceInUp" style="font-size:38px;">Our Expert Team</h2>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                  <div class="col-xs-6 col-sm-4 col-md-2">
+                    <div class="team-box two wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="team-image">
+                            <img style="background-color:#39A6CB;" src="{% static 'form/images/frame_01.png' %} " alt="">
+                        </div>
+                        <div class="team-hover text-center">
+                            <h6 class="t_title">Avinash Yadav</h6>
+                            <span class="t_sub_title">Founder/CEO</span>
+                            <div class="team-social-menu">
+                                <a href="#"><i class="icofont icofont-social-facebook"></i></a>
+
+                                <a href="https://www.linkedin.com/in/avinash-kumar-9b718217b/" target='_blank'><i class="icofont icofont-social-linkedin"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+
+
+
+                <div class="col-xs-6 col-sm-4 col-md-2">
+                  <div class="team-box two wow fadeInUp" data-wow-delay="0.2s">
+                      <div class="team-image">
+                          <img src="{% static 'form/images/frame_02.jpg' %} " alt="">
+                      </div>
+                      <div class="team-hover text-center">
+                          <h6 class="t_title">Sudhanshu Ranjan Sahu</h6>
+                          <span class="t_sub_title">Technical Engineer(R&D)</span>
+                         
+                          <div class="team-social-menu">
+                              <a href="#"><i class="icofont icofont-social-facebook"></i></a>
+
+                              <a href="#" target='_blank'><i class="icofont icofont-social-linkedin"></i></a>
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+              <div class="col-xs-6 col-sm-4 col-md-2">
+                <div class="team-box two wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="team-image" >
+                        <img  src="{% static 'form/images/maneesh.JPG' %} " alt="">
+                    </div>
+                    <div class="team-hover text-center">
+                        <h6 class="t_title">Maneesh Rout</h6>
+                        <span class="t_sub_title">Technical Engineer(R&D)</span>
+                      
+                        <div class="team-social-menu">
+                            <a href="#"><i class="icofont icofont-social-facebook"></i></a>
+
+                            <a href="#" target='_blank'><i class="icofont icofont-social-linkedin"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+              <div class="team-box two wow fadeInUp" data-wow-delay="0.2s">
+                  <div class="team-image">
+                      <img style="background-color:#39A6CB; height:210px; width:520px"src="{% static 'form/images/saumya_mishra.jpg' %} " alt="">
+                  </div>
+                  <div class="team-hover text-center">
+                      <h6 class="t_title">Saumya R Mishra</h6>
+                      
+                     
+                  </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2">
+              <div class="team-box two wow fadeInUp" data-wow-delay="0.2s">
+                <div class="team-image">
+                    <img style="background-color:#39A6CB; height:210px; width:520px" src="{% static 'form/images/purushottam_sahu.jpg' %} " alt="">
+                </div>
+                <div class="team-hover text-center">
+                    <h6 class="t_title">Purushottam Sahu</h6>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-4 col-md-2">
+          <div class="team-box two wow fadeInUp" data-wow-delay="0.2s">
+              <div class="team-image">
+                  <img style="background-color:#39A6CB; height:210px; width:520px" src="{% static 'form/images/s_aloka_patro.jpeg' %} " alt="">
+              </div>
+              <div class="team-hover text-center">
+                  <h6 class="t_title">S Aloka Patro</h6>
+                  
+              </div>
+          </div>
+        </div>
+        </div>
+    </section>
+    <!-- Team-Area / -->
+
+<!-- footer area / -->
+
+
+
+
+<div class="clearfix">
+<footer class="ct-footer"id="footer-area">
+<div class="container">
+
+<div class="row">
+<div class="col-xs-6 col-sm-3 col-md-3">
+<ul class="ct-footer-list text-center-sm wow slideInLeft" data-wow-delay="1s">
+
+  <li>
+    <h5 class="ct-footer-list-header" style="font-size: 30px;"   >Quick Links</h5>
+    <ul>
+      <li>
+        <h4 ><a href="/form" >Home</a></h4>
+      </li>
+      <li>
+        <h4 ><a href="/form/#about-area" >About us</a></h4>
+      </li>
+      <li>
+        <h4 ><a href="/form/#product-area" >Products</a></h4>
+      </li>
+      <li>
+        <h4 ><a href="/form/contact" >Contact us</a></h4>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+<div class="col-xs-6 col-sm-5 col-md-5" style="margin-top:30px;  padding-right:5px;">
+<ul>
+<ul style="margin-top:17px; ">
+<address class="text-primary wow fadeInUp " data-wow-delay="1s" style ="font-size: 16px;" >
+
+    <span  style="font-size:100%;"><h style="font-size: 30px;">Get in Touch</h>
+    <br> <a href="tel:5555555555"  style="color:#5DADE2;"><img alt="contact"src="https://cdn0.iconfinder.com/data/icons/iconsweets2/40/phone_telephone_call.png">+91 7978933951</a>
+    <br><a href="tel:5555555555"  style="color:#5DADE2;"><img alt="contact"src="https://cdn0.iconfinder.com/data/icons/iconsweets2/40/phone_telephone_call.png">+91 7377709154</a><br></span>
+    <a href="tel:5555555555"><img alt="email" src="https://cdn0.iconfinder.com/data/icons/iconsweets2/40/email_envelope.png"> <a href="mailto:support@yarevtechnology.com"  style="color:#5DADE2;">support@yarevtechnology.com</a></a></span><br>
+    <a href="tel:5555555555"><img alt="email" src="https://cdn0.iconfinder.com/data/icons/iconsweets2/40/email_envelope.png"> <a href="mailto:career@yarevtechnology.com"  style="color:#5DADE2;">career@yarevtechnology.com</a></a></span><br>
+    <a href="tel:5555555555"><img alt="email" src="https://cdn0.iconfinder.com/data/icons/iconsweets2/40/email_envelope.png"> <a href="mailto:sales@yarevtechnology.com"  style="color:#5DADE2;">sales@yarevtechnology.com</a></a></span><br>
+
+  </span><img alt="location" src="https://cdn0.iconfinder.com/data/icons/iconsweets2/40/location_pin.png"> <a style="color:#5DADE2;"  href="https://www.google.com/maps/place/TIIR+Building,+Department+of+Planning+and+Architecture./@22.254998,84.903393,16z/data=!4m5!3m4!1s0x0:0x939a99f88fdffb36!8m2!3d22.2549982!4d84.9033928?hl=en" target='_blank'>TI-113,TIIR Building,&nbsp; NIT Rourkela &nbsp; &nbsp; Campus,Rourkela,Odisha-769008
+
+
+</address>
+   </ul>
+</ul>
+
+</div>
+
+    <div class="col-sm-12 col-md-4 col-xs-12" >
+     <div class="mapouter" style ="padding-top:30px;" >
+<div class="gmap_canvas wow slideInRight" data-wow-delay="1s"  >
+<iframe  width="400" height="250" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.606525143878!2d84.90120411445669!3d22.255003150162665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a201dd5e37ae521%3A0x939a99f88fdffb36!2sTIIR+Building%2C+Department+of+Planning+and+Architecture.!5e0!3m2!1sen!2sin!4v1558692829086!5m2!1sen!2sin"></iframe><a href=""></a>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+
+
+<div class="container-fluid" id="onlyfr" style="text-align: center;">
+<div class="row">
+ <div class="col-md-6 col-xs-12" >
+            <h1 class="wow bounceInUp" style="color:#F0F3F4;">Recognized By</h1>
+ <img class="wow slideInLeft" data-wow-delay="1s" src="{% static 'form/images/startupindia.png' %} " alt=""> &nbsp;
+ <img class="wow  slideInRight" data-wow-delay="1s" src="{% static 'form/images/srtup.png' %} " alt="">
+            </div>
+            <div class="col-md-6  col-xs-12">
+            <h1 class="wow bounceInUp" style="color:#F0F3F4;">Supported By</h1>
+ <img class="wow  slideInLeft" data-wow-delay="1s" style="width:150px; height:130px;" src="{% static 'form/images/nitlogo1.png' %} " alt=""> &nbsp;&nbsp;
+ <img class="wow slideInRight" data-wow-delay="1s" src="{% static 'form/images/ftbi.png' %} " alt="">
+            </div>
+</div>
+<hr>
+
+<!-- Include Font Awesome Stylesheet in Header -->
+<div class="row wow fadeInUp" data-wow-offset="10" id="lab_social_icon_footer" style="padding:15px;">
+        <div class="text-center center-block">
+
+                <a href="https://www.facebook.com/Yarev-2231308817180080/?modal=admin_todo_tour" target='_blank'><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                    <a href="https://www.instagram.com/yarevtech/" target='_blank'><i id="social-in" class="fa fa-instagram fa-3x social " ></i></a>
+                    <a href="" target='_blank'><i id="social-gp" class="fa fa-youtube-square fa-3x social"></i></a>
+
+    </div>
+</div>
+
+
+
+
+
+<div class="row" style="text-align: center;">
+<h5 class="wow fadeInUp">Copyright © 2019 Yarev Technology Private Limited.<a href="https://www.privacypolicygenerator.info/live.php?token=iZI3x7KnRDBPY02vI8IeMcWI2D0AzRli" target='_blank'>Privacy Policy | </a><a href="https://www.termsandconditionsgenerator.com/live.php?token=RK8MmKgA3N9iL80SK8B4G3x1MSzQgmYh" target='_blank'>Terms Conditions</a></h5>
+</div>
+</div>
+
+
+</footer>
+</div>
+
+<script>
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  </script>
+{% endblock %}
+
+</body>
+
+
+</html>

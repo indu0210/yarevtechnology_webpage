@@ -1,0 +1,61 @@
+{% extends "form/base.html" %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+
+<!-- Title -->
+    {% block head%}
+      <title>{% trans "Sign Up" %}</title>
+    {% endblock %}
+{% block body %}
+<style>
+  .sfrm{
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    margin-top: 85px;
+    background-color:#5ACCD4;
+  }
+  .button1 {
+  display: inline-block;
+  border-radius: 25px;
+  background-color: #58A2A2;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  line-height:12px;
+
+}
+.button1:hover {
+  opacity: 0.6;
+  color:tomato;
+  background-color:#9B5AD4;
+}
+
+  </style>
+<div class="container-fluid" id="contact-area">
+<div class="row">
+<div class="col-sm-4  col-sm-offset-4 text-center sfrm">
+<h1>{% trans "Sign Up" %}</h1>
+
+<p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}"><b style="font-size:20px;">Sign In</b></a>.{% endblocktrans %}</p>
+
+<form class="signup" id="signup_form" method="post" action="{% url 'form:signup' %}">
+  {% csrf_token %}
+  {{ form | crispy }}
+  {% if redirect_field_value %}
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+  {% endif %}
+  <button type="submit" class="button1"><span>{% trans "Sign Up" %}</span></button>
+</form>
+</div>
+</div>
+</div>
+{% endblock %}
